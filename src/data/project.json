@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "slug": "fitlog",
+    "title": "FitLog - Fitness Tracking Application",
+    "image": "/fitlog.png",
+    "category": "Fitness & Health Web Application",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "REST API"
+    ],
+    "description": "A responsive fitness application designed to help users explore workouts, track exercises, and organize personal fitness plans.",
+    "live": "https://assigment-06-5xa1.vercel.app/",
+    "github": "https://github.com/mdwakil2009/assigment-06",
+    "challenges": [
+      "Building a responsive interface for different screen sizes",
+      "Organizing workout information into reusable components",
+      "Connecting the frontend with API data"
+    ],
+    "future": [
+      "Add personalized fitness profiles",
+      "Add workout progress tracking",
+      "Improve fitness plan management"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "bazar-dor",
+    "title": "Bazar Dor - Product Price Comparison",
+    "image": "/bazardor.png",
+    "category": "Product Information & Price Comparison",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API"
+    ],
+    "description": "A Bangla-focused product information and price comparison website that helps users explore products and compare prices across different markets.",
+    "live": "https://bazar-dor-omega-ten.vercel.app/",
+    "github": "https://github.com/mdwakil2009/bazar-dor",
+    "challenges": [
+      "Displaying product information in a user-friendly layout",
+      "Integrating API data into reusable components",
+      "Creating responsive product and category navigation"
+    ],
+    "future": [
+      "Add advanced product search and filtering",
+      "Include more market price data",
+      "Add product price history and tracking"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "assignment-5",
+    "title": "DevStack - Developer Tech Stack Builder",
+    "image": "/devstack.svg",
+    "category": "Developer Utility & Web Application",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Vite"
+    ],
+    "description": "A web application where users can explore different development technologies, organize tools, and build their own custom tech stack with responsive UI components.",
+    "live": "https://assignment-5-dev-stack.netlify.app/",
+    "github": "https://github.com/mdwakil2009/Assignment-05",
+    "challenges": [
+      "Managing dynamic state transitions when selecting and removing technologies",
+      "Creating an intuitive and responsive UI layout using Tailwind CSS and DaisyUI",
+      "Structuring reusable components and managing props cleanly in TypeScript"
+    ],
+    "future": [
+      "Add category-based technology filtering",
+      "Support saving and exporting customized stacks via local storage",
+      "Provide detailed documentation and version insights for each technology"
+    ]
+  }
+]
