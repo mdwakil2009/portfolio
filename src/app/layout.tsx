@@ -54,7 +54,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#0b0f19] text-slate-100 font-sans selection:bg-sky-500/30 selection:text-sky-200">
         <Navber />
-        <div className="flex-1 w-full flex flex-col">{children}</div>
+        <div className="flex-1 w-full flex flex-col ">{children}</div>
         <Footer />
       </body>
     </html>
