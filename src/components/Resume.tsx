@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import {
   FileTextIcon,
   DownloadIcon,
@@ -13,15 +13,6 @@ import {
 } from "./Icons";
 
 const Resume: React.FC = () => {
-  const [downloadNotice, setDownloadNotice] = useState<string | null>(null);
-
-  const handleDownloadClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setDownloadNotice(
-      "The verified PDF copy of my resume is currently being finalized and will be linked directly to /Wakil_Ahammed_Resume.pdf. For now, please review my complete verified qualifications below or contact me directly via email!"
-    );
-  };
-
   return (
     <section id="resume" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Section Header */}
@@ -49,37 +40,21 @@ const Resume: React.FC = () => {
               Download Official Resume
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-lg leading-relaxed">
-              Drop <code className="text-sky-300 font-mono text-xs bg-slate-950 px-1.5 py-0.5 rounded">Wakil_Ahammed_Resume.pdf</code> into the public folder to enable instant direct file download.
+              Download a verified offline copy of my curriculum vitae including my technical skills, qualifications, and project details.
             </p>
           </div>
 
           <div className="shrink-0 flex flex-col sm:flex-row gap-3">
-            <button
-              type="button"
-              onClick={handleDownloadClick}
+            <a
+              href="/Wakil_Ahammed_CV.pdf"
+              download="Wakil_Ahammed_CV.pdf"
               className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-medium text-sm shadow-lg shadow-sky-500/25 transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
             >
               <DownloadIcon className="w-4 h-4" />
               <span>Download CV (PDF)</span>
-            </button>
+            </a>
           </div>
         </div>
-
-        {/* Modal / Alert Notification if clicked */}
-        {downloadNotice && (
-          <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-200 text-xs sm:text-sm leading-relaxed flex items-start gap-3">
-            <span className="p-1 rounded bg-amber-500/20 text-amber-400 shrink-0 font-bold">ℹ</span>
-            <div className="flex-1">
-              <p>{downloadNotice}</p>
-            </div>
-            <button
-              onClick={() => setDownloadNotice(null)}
-              className="text-amber-400 hover:text-white text-xs font-semibold px-2 py-0.5 rounded hover:bg-amber-500/20"
-            >
-              Dismiss
-            </button>
-          </div>
-        )}
 
         {/* Resume Preview Sheet */}
         <div className="p-8 sm:p-10 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-2xl space-y-8">
